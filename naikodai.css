@@ -1,0 +1,560 @@
+body {
+    background-color: black;
+    background-size: cover;
+    font-family: cursive;
+    width: 100%;
+    height: 100%;
+}
+
+h1 p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.header h1 {
+    font-size: 80px;
+    
+}
+
+.header {
+    font-weight: 300;
+    color: lightcyan;
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    border: 3px solid lightcyan;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+.navigator {
+    color: white;
+    background-color: transparent;
+    width: 900px;
+    position: absolute;
+    left: 110px;
+    top: 189px;
+}
+.navigator a:hover{
+    background-color: cyan;
+    color: black;
+    font-size: large;
+}
+
+.ul {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 280px;
+    margin-bottom: 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.glow-container {
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.glow-container img {
+    z-index: 0;
+    width: 100%;
+    height: 620px;
+    background-size: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+    animation-name: glow;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition-property: all;
+    transition-duration: 8s;
+}
+
+.glow-container h1 {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
+
+@keyframes glow {
+    0% {
+        border-color: transparent;
+        border-width: 3px;
+    }
+    50% {
+        border-color: white;
+        border-width: 3px;
+    }
+    75% {
+        border-color: white;
+        border-width: 3px;
+    }
+    100% {
+        border-color: transparent;
+        border-width: 3px;
+    }
+}
+
+.container-2 {
+    width: 1300px;
+    height: 100%;
+    background-color: rgb(255, 205, 112);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px; 
+    border-radius: 40px;
+
+}
+
+.box1 button{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    
+   
+}
+.box2 button{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+   
+}
+.box3 button{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    
+}
+
+.box1, .box2, .box3 {
+    border: 1px solid white;
+    background-color: lightcyan;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+
+.box1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.box2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.box3 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.box4 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
+    width: 300px;
+    margin-left: 50px;
+    border: 1px solid white;
+    background-color: lightcyan;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.footerhead {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    border: 2px solid cyan;
+}
+
+.footerbox1, .footerbox2, .footerbox3, .footerbox4, .footerbox5 {
+    color: lightcyan;
+}
+.footerbox1 a:hover{ color: cyan;
+text-decoration: underline;}
+.footerbox1 a {
+    text-decoration: underline;
+}
+
+.footerbox1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    height: 120px;
+    padding-left: 90px;
+    border-top: 3px solid cyan;
+   
+}
+
+.footerbox2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    height: 120px;
+    border-top: 3px solid cyan;
+
+    
+}
+
+.footerbox3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    height: 120px;
+    width: 418.67px;
+    border-top: 3px solid cyan;
+    
+}
+
+.footerbox4 {
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 1;
+    height: 120px;
+    width: 1294px;
+    box-sizing: border-box;
+    padding-left: 450px;
+    border-top: 3px solid  cyan ;
+
+}
+
+.footerbox5 {
+    grid-column: 1 / span 5;
+    grid-row: 4 / span 1;
+    width: 1294px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid cyan;
+   
+}
+.instalinks{
+    box-sizing: border-box;
+    padding-left: 120px;
+}
+/*index.html css end */
+
+/*DROP DOWN CONTENT*/
+
+.dropdown{
+    color: white;
+    background-color: transparent;
+    position: relative;
+    
+    
+
+}
+.dropdownbutton{
+    color: white;
+    background-color: black;
+    
+   
+
+}
+.dropcontent{
+    min-width: 160px;
+    height: 160px;
+    display: none;
+    color: black;
+    z-index: 5;
+    position: absolute;
+
+}
+ .dropcontent a {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    display: block;
+
+}
+
+.dropdown:hover .dropdownbutton{
+    background-color: lightcyan;
+    color: black;
+}
+.dropdown:hover .dropcontent{
+    display: block;
+    background-color: black;
+    color: black;
+}
+.dropdown .dropcontent a:hover {
+    background-color: cyan;
+    color: black;
+    
+}
+/* recipe*/
+
+   .photogrid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 200px;
+    width: 1000px;
+    margin-left: 90px;
+   }
+
+   .photo1,.photo2,.photo3,.photo4{
+    background-color: rgb(255, 205, 112);
+    border-radius: 30px;
+    border: 4px solid lightcyan;
+   
+   
+    
+   }
+
+   .photo1{ 
+    grid-column: span 1;
+    grid-row: 1/span2;
+    width: 500px; ;
+    height: 621.5px;
+   }
+   .photo2{
+    grid-row: 1;
+    grid-column: 2/span 3;
+    width: 570px;
+    height: 300px;
+    }
+    .photo3{
+
+        width:285px;
+        height: 300.5px;
+    }
+    .photo4{
+        width:285px;
+        height: 300px;
+    }
+   
+
+
+   .cooking{
+    font-size: large;
+    display: grid;
+    height: 1000px ;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+   
+    width: 100%;
+    
+
+   }
+   .cookingbox1  {
+    background-color: rgb(255, 205, 112);
+    width: 600px ;
+    margin-left: 50px;
+    border: 5px solid lightcyan;
+    border-radius: 20px;
+    padding: 10px;
+   }
+   .cookingbox2{
+    background-color: black;
+    width: 600px ;
+    height: 600px;
+    margin-right: 50px;
+    border-radius: 20px;
+   }
+
+   /*king oyester content*/
+
+   .kingoyester-content{
+  
+    color: black;
+    background-color: lightcyan;
+   border: 3px solid black;
+   border-radius: 10px;
+   padding:20px;
+    }
+
+    .aboutme-container{
+        width: 100%;
+        background-color: #FBCEB1;
+        
+    }
+    .aboutme-content{
+        padding: 50px;
+        border: 6px solid white;
+        border-radius: 10px;
+        margin: 20px;
+        
+       
+    }
+
+    /*Contact us*/
+
+    .contactus1-container{
+        width: 1300px;
+        height: 800px;
+        background-image: url(contactus1-bg.avif);
+        background-size: cover;
+        border: 4px solid gray;
+        margin-left: 6px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between; align-items: center;
+        
+        
+    }
+    .contactusbox1 {
+        width: 400px;
+        color:rgb(255, 255, 255);
+        padding: 20px;
+       
+       
+    }
+    .contactusbox2{
+        display: flex;
+        justify-content: center; align-items: space-between;
+        
+    }
+
+.container-1{
+    margin-right: 33px;
+    
+    
+}
+    
+/*home page hover effect for buttons*/
+
+
+button:hover{
+    background-color: orange;
+    
+}
+
+#hovereffect{
+    background-color: rgb(235, 127, 64); 
+            width: 90px;
+            height: 50px;
+            border-radius: 20px;
+            margin-top: 100px;
+
+}
+#hovereffect:hover {
+    background-color: cyan;
+    
+}
+#hovereffect:hover a {
+    color: black;
+    
+}
+
+#submit:hover{
+    background-color: cyan;
+}
+#submit-hover{
+background-color: black; color: white; border-radius: 20px; height: 50px;
+}
+#submit-hover:hover{
+    background-color: orange;
+}
+.footerbox4 .instalinks a:hover{background-color: cyan;}
+
+#contact-submit:hover{
+    border-radius: 10px;
+    background-color: orange;
+}
+
+@media (max-width: 1200px) {
+    .navigator .ul {
+        flex-direction: column;
+    }
+
+    .box1, .box2, .box3 {
+        flex: 1 1 calc(50% - 1em); /* Two items per row */
+    }
+}
+
+/* For screens up to 992px (e.g., tablets) */
+@media (max-width: 992px) {
+    .box1, .box2, .box3 {
+        flex: 1 1 calc(50% - 1em); /* Two items per row */
+    }
+
+    .navigator .ul {
+        flex-direction: column;
+    }
+
+    .glow-container img {
+        width: 100%;
+    }
+}
+
+/* For screens up to 768px (e.g., large phones) */
+@media (max-width: 768px) {
+    header img {
+        width: 80px;
+    }
+
+    .box1, .box2, .box3 {
+        flex: 1 1 calc(100% - 1em); /* One item per row */
+        margin-bottom: 1em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .navigator a {
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+}
+
+/* For screens up to 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+    header img {
+        width: 60px;
+    }
+
+    .box1 img, .box2 img, .box3 img {
+        width: 100%;
+    }
+
+    button {
+        padding: 0.5em;
+    }
+
+    .glow-container img {
+        width: 100%;
+    }
+
+    .navigator a {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+    .navigator{
+        flex-direction: column;
+    }
+    .container-2{
+        --min: 30ch;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    }
+    
+}
